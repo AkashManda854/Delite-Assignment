@@ -9,7 +9,7 @@ function App() {
   // Fetch data from backend when app starts
   useEffect(() => {
     axios
-      .get("http://localhost:5000/experiences") // backend URL
+      .get("https://delite-assignment.onrender.com/experiences")
       .then((res) => {
         setExperiences(res.data);
         setLoading(false);
